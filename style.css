@@ -1,0 +1,124 @@
+body{
+  display: flex;
+  gap: 20px;
+}
+
+card {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  border-radius: 15px;
+
+  justify-content: center;
+  width: 400px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+}
+.icon {
+  background-color: white;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 4px;
+}
+.smallcircle {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+.text p {
+  margin: 0;
+}
+.text p:last-child{
+  color: whitesmoke;
+  font-size: small;
+}
+
+.icon-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.circle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.cat{
+  margin: 0;
+  padding: 0;
+  height: 290px;
+}
+
+.cat img {
+  width: 400px;
+  margin: 0;
+  padding: 0%;
+  object-fit: cover;
+  
+  
+
+  
+}
+.second-cat{
+  height: 290px;
+}
+.svg{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.svg svg {
+ justify-content: flex-start;
+  height: 15px;
+  width: 15px;
+  margin: 0%;
+  padding: 5px 5px 0px 5px;
+}
+.lower-header{
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  
+  
+  
+}
+.caption p{
+  margin: 10px 10px 30px 10px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+ 
+@media screen and (max-width: 375px) {
+  body{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
